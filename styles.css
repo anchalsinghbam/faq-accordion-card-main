@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+  overflow: hidden;
+  min-height: 100vh;
+  background-image: linear-gradient(hsl(273, 75%, 66%), rgb(101, 101, 231));
+}
+
+header {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  margin: 4rem 0 2rem 0;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.8;
+  color: hsl(240, 6%, 50%);
+  margin: 0.7rem 8rem 0.7rem 0;
+  cursor: pointer;
+}
+
+p:hover {
+  color: red;
+}
+
+hr {
+  width: 25rem;
+  border-style: none;
+  border-top: 1px solid hsl(240, 5%, 91%);
+}
+
+.card {
+  background-color: #fff;
+  width: 55rem;
+  height: 30rem;
+  border-radius: 20px;
+  box-shadow: 1px 10px 30px rgba(2, 2, 2, 0.5);
+  overflow-y: scroll;
+  display: flex;
+}
+
+.bg {
+  width: 45rem;
+  height: 51rem;
+  position: absolute;
+  margin: -15rem 0 0 -23rem;
+}
+
+.woman {
+  width: 25rem;
+  height: 20rem;
+  position: relative;
+  top: 4rem;
+  left: -4.1rem;
+}
+
+.bgmob,
+.womanmob {
+  display: none;
+}
+
+.box {
+  width: 10rem;
+  height: 10rem;
+  position: absolute;
+  margin: 2rem 0 0 -27.3rem;
+}
+
+.open > .que {
+  color: hsl(237, 12%, 33%);
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0rem;
+}
+
+.open > .ans {
+  display: block;
+}
+
+.ans {
+  font-size: 0.8rem;
+  margin-top: 0rem;
+  display: none;
+}
+
+.que {
+  width: 100%;
+  max-width: 25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.open > .que> .arrow {
+  transform: rotate(-180deg);
+}
+
+@media screen and (max-width: 900px) {
+  .card {
+    width: 22rem;
+    height: 35rem;
+    overflow: visible;
+    display: block;
+  }
+
+  .bg,
+  .woman {
+    display: none;
+  }
+
+  .bgmob,
+  .womanmob {
+    display: inline;
+    position: absolute;
+  }
+
+  .bgmob {
+    margin: 0 0 0 2.5rem;
+  }
+
+  .womanmob {
+    margin: -6.5rem 0 0 1rem;
+  }
+
+  h1 {
+    margin: 10rem 0 2rem 8.5rem;
+  }
+
+  p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0.8rem 0 0.8rem 1.5rem;
+  }
+
+  hr {
+    width: 19rem;
+    margin: 0 0 0 1.5rem;
+  }
+
+  .que {
+    font-size: 0.95rem;
+  }
+
+  .ans {
+    font-size: 0.899rem;
+    margin-top: 0 4rem 0 0;
+  }
+
+  .arrow {
+    display: flex;
+    flex-direction: column;
+    margin: 14.8rem 6rem 0 -1rem;
+  }
+
+  .arrow2 {
+    margin: 2.7rem 0 0 0;
+    transform: rotate(180deg);
+  }
+
+  .arrow3 {
+    margin: 5.5rem 0 0 0;
+  }
+
+  .arrow4 {
+    margin: 2.8rem 0 0 0;
+  }
+
+  .arrow5 {
+    margin: 2.5rem 0 0 0;
+  }
+}
